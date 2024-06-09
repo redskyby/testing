@@ -1,0 +1,27 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "npx tsc",
+    "test": "jest",
+    "format": "prettier --write \"**/*.ts\"",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/eslint": "^8.56.10",
+    "eslint": "^9.4.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
