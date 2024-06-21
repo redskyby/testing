@@ -6,6 +6,5 @@ describe("test app", () => {
         render(<App />);
         const helloWorld = screen.queryByText(/hello2/i);
         expect(helloWorld).toBeNull();
-
     });
 });
