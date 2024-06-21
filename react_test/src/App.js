@@ -1,13 +1,12 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-    const [data, setData] = useState(null)
+    const [data, setData] = useState(null);
     useEffect(() => {
-            setTimeout(() => {
-                setData({})
-            }, 100)
-        },
-        [])
+        setTimeout(() => {
+            setData({});
+        }, 100);
+    }, []);
 
     return (
         <div>
