@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 function App() {
     const [data, setData] = useState(null);
@@ -22,7 +22,7 @@ function App() {
             <button onClick={onClick} data-testid="toggle-btn">
                 click me
             </button>
-            <input onChange={e => setValue(e.target.value)} type="text" placeholder={"input value...."}/>
+            <input onChange={(e) => setValue(e.target.value)} type="text" placeholder={"input value...."} />
         </div>
     );
 }
