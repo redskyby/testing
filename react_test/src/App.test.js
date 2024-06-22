@@ -14,13 +14,13 @@ describe("test app", () => {
         expect(helloWorld).toBeInTheDocument();
     });
 
-    test("check click",  () => {
+    test("check click", () => {
         render(<App />);
-        const btn = screen.getByTestId("toggle-btn")
-        expect(screen.queryByTestId("toggle-elem")).toBeNull()
-        fireEvent.click(btn)
+        const btn = screen.getByTestId("toggle-btn");
+        expect(screen.queryByTestId("toggle-elem")).toBeNull();
+        fireEvent.click(btn);
         expect(screen.queryByTestId("toggle-elem")).toBeInTheDocument();
-        fireEvent.click(btn)
-        expect(screen.queryByTestId("toggle-elem")).toBeNull()
+        fireEvent.click(btn);
+        expect(screen.queryByTestId("toggle-elem")).toBeNull();
     });
 });
