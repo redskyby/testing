@@ -1,0 +1,10 @@
+const config = {
+    singleQuote: false,
+    jsxSingleQuote: false,
+    semi: true,
+    tabWidth: 4,
+    printWidth: 120,
+    arrowParens: "always",
+};
+
+export default config;
