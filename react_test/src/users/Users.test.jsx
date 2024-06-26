@@ -1,4 +1,4 @@
-import {render} from "@testing-library/react";
+import {render, screen} from "@testing-library/react";
 import Users from "./Users";
 import axios from "axios";
 
@@ -28,8 +28,12 @@ describe("Users test", () => {
         jest.clearAllMocks();
     })
 
-    test("test render", () => {
+    test("test render", async () => {
+        axios.get.mockReturnValue(response);
         render(<Users/>);
-
+        const users = await screen.findAllByTestId("user-item")
+        expect(users.length).toBe(3)
+        expect(axios.get).toBeCalledTimes(1);
+        screen.debug()
     });
 })
