@@ -1,6 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import Users from "./Users";
-import axios from "axios";
+
 
 jest.mock("axios")
 describe("Users test", () => {
